@@ -4,17 +4,26 @@
   "description": "my first npm package!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel src/ --out-dir lib"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/haibin-007/test_npm.git"
   },
-  "keywords": ["first","test"],
+  "keywords": [
+    "first",
+    "test"
+  ],
   "author": "haibin <1302888286@qq.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/haibin-007/test_npm/issues"
   },
-  "homepage": "https://github.com/haibin-007/test_npm#readme"
+  "homepage": "https://github.com/haibin-007/test_npm#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.14.1"
+  }
 }
