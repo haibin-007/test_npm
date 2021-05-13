@@ -1,2 +1,2 @@
-import { Stack } from './lib/Stack'
-export { Stack }
+import { add } from './lib/Stack'
+export { add }
